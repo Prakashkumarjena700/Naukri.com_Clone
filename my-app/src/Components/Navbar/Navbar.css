@@ -1,0 +1,202 @@
+.navbar {
+    height: 70px;
+    display: flex;
+    padding: 0px 30px;
+    color: #445578;
+    width: 100%;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.mainMenuItem {
+    border: 5px solid white;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.mainMenuItem:hover {
+    border-bottom: 5px solid #ff7555;
+}
+
+.navbar img {
+    width: 80%;
+}
+
+.navbar>div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+}
+
+.navbar>div:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-weight: 600;
+    color: rgb(59, 58, 58);
+    margin-left: 10%;
+    color: #445578;
+}
+
+.loginRegister button:first-child {
+    border: 1px solid #457eff;
+    color: #457eff;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-weight: bold;
+}
+
+.loginRegister button:last-child {
+    border: 1px solid ff7555;
+    color: white;
+    background-color: #ff7555;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.forEmployer {
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.blocked {
+    font-weight: bold;
+    color: black;
+    font-size: 19px;
+}
+
+
+
+
+#jobSubmenue {
+    border: 1px solid #9eadcc84;
+    position: absolute;
+    left: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    column-gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#border {
+    border-left: 1.5px solid #9eadcc84;
+    padding: 5px 0px;
+    padding-left: 15px;
+}
+
+#companiesSubmenue {
+    border: 1px solid #9eadcc84;
+    position: absolute;
+    left: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    column-gap: 20px;
+    padding: 20px 0px 20px 20px;
+    border-radius: 10px;
+}
+
+#serviesSubmenue {
+    border: 1px solid #9eadcc84;
+    position: absolute;
+    left: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    column-gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#foremployersSubmenue {
+    border: 1px solid #9eadcc84;
+    position: absolute;
+    right: 40px;
+    line-height: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.loginBox {
+    padding: 25px;
+}
+
+.loginBox p:first-child {
+    color: #4a90e2;
+    position: absolute;
+    right: 55px;
+    top: 50px;
+}
+
+.loginBox Input {
+    border: 0.5px solid rgba(0, 0, 0, 0.379);
+    border-radius: 0px;
+}
+
+label {
+    font-size: small;
+    font-weight: 500;
+}
+
+.loginBox p:nth-child(8) {
+    font-size: 12px;
+    float: right;
+    color: #457eff;
+}
+
+.loginBox p:nth-child(10) {
+    text-align: center;
+    color: #4a90e2;
+    margin-bottom: 30px;
+}
+
+.loginBox p:nth-child(11) {
+    display: inline-block;
+    margin: auto;
+    color: gray;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    margin-left: 48%;
+    padding: 0px 5px;
+}
+
+.loginBox .devider {
+    position: relative;
+    height: 1px;
+    background-color: #457dff33;
+    bottom: 12px;
+
+}
+
+.loginBox .loginBtn {
+    background-color: #4a90e2;
+    color: white;
+    padding: 7px 0px;
+    width: 100%;
+    margin: 20px 0px;
+    margin-top: 40px;
+}
+.signinWithGoogleBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 7px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    color: gray;
+    margin-top: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
