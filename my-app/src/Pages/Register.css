@@ -1,0 +1,35 @@
+*{
+    background-color: #fafbfe;
+}
+.registerNavbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    height: 70px;
+   
+}
+.registerNavbar{
+    height: 52px;
+    background-color: white;
+}
+.registerPageFixedBox{
+    border: 1px solid red;
+    position: fixed;
+    bottom: 90px;
+    left: 30px;
+    width: 250px;
+    padding: 20px;
+    font-size: 15px;
+}
+.registerPageFixedBox h2{
+    font-weight: bold;
+    font-size: 20px;
+}
+.registerPageFixedBox p{
+    margin: 5px 0px;
+}
+.fixedImage{
+    position: fixed;
+    bottom: 300px;
+    left: 50px;
+}
