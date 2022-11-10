@@ -1,0 +1,22 @@
+.TopcompanieshiringnowSliderContainer {
+    background-color: #457eff;
+    width: 85%;
+    margin: auto;
+}
+
+.TopcompanieshiringnowSliderContainer button {
+    border: 1px solid orangered;
+}
+
+.TopcompanieshiringnowSliderContainer .Card {
+    border: 1px solid green;
+    
+}
+
+.slick-slide>div {
+    margin: 0 10px;
+}
+
+.slick-list {
+    margin: 0 -10px;
+}
