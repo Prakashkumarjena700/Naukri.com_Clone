@@ -1,0 +1,107 @@
+.speacer {
+    height: 70px;
+}
+
+.firstDiv {
+    text-align: center;
+    color: #8292b4;
+    font-size: 20px;
+    background-color: #f9fafe;
+    border: 1px solid white;
+}
+
+.firstDiv h1 {
+    font-weight: bold;
+    font-size: 35px;
+    color: black;
+    margin-top: 55px;
+    background-color: #f9fafe;
+}
+
+.searchDiv {
+    box-shadow: 0px 0px 10px -5px rgba(130, 146, 180, 1);
+    width: 80%;
+    margin: auto;
+    border-radius: 30px;
+    background-color: white;
+    position: relative;
+    top: 30px;
+    display: flex;
+    padding: 10px;
+
+}
+
+.searchDiv Input {
+    border-radius: 0px;
+    border: none;
+    outline: none;
+    color: #8292b4;
+
+}
+
+.searchDiv Select {
+    border-radius: 0px;
+    border-top: none;
+    border-bottom: none;
+    color: #8292b4;
+}
+
+.searchDiv Select option {
+    height: 100px;
+}
+
+.searchDiv Button {
+    background-color: #457eff;
+    color: white;
+    padding: 10px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+
+}
+
+.homePage3Btn {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.homePage3Btn Button{
+    background-color: white;
+    margin: 0px 3px;
+    font-size: 14px;
+}
+.homePage3Btn Button:hover{
+    background-color: white;
+}
+.firstFlexDiv{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.firstFlexDiv div{
+    border: 1px solid #eaf1f5;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 6px 10px 0px rgba(234,241,245,1);
+    margin-top: 20px;
+}
+.firstFlexDiv div:hover{
+    box-shadow: 0px 10px 40px -17px rgba(69,126,255,1);
+}
+.firstFlexDiv>div>p:first-child{
+    padding: 3px;
+    border-radius: 50%;
+}
+.threeCard{
+    border: 1px solid red;
+}

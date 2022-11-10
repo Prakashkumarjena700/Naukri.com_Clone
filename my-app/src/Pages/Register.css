@@ -1,35 +1,171 @@
-*{
-    background-color: #fafbfe;
-}
-.registerNavbar{
+
+.registerNavbar {
     display: flex;
     justify-content: space-between;
     padding: 10px 30px;
     height: 70px;
-   
+
 }
-.registerNavbar{
+
+.registerNavbar {
     height: 52px;
     background-color: white;
 }
-.registerPageFixedBox{
-    border: 1px solid red;
+
+.registerPageFixedBox {
+    border: 1px dotted #d4e1ea;
     position: fixed;
-    bottom: 90px;
+    bottom: 70px;
     left: 30px;
-    width: 250px;
-    padding: 20px;
+    width: 270px;
+    padding: 50px 20px 40px 20px;
     font-size: 15px;
+    border-radius: 20px;
+    background-color: white;
 }
-.registerPageFixedBox h2{
+
+.registerPageFixedBox h2 {
     font-weight: bold;
     font-size: 20px;
 }
-.registerPageFixedBox p{
+
+.registerPageFixedBox p {
     margin: 5px 0px;
 }
-.fixedImage{
+
+.fixedImage {
     position: fixed;
     bottom: 300px;
-    left: 50px;
+    left: 100px;
+    z-index: 1;
+}
+
+.registerForm {
+    width: 72%;
+    float: right;
+    padding: 90px 250px 100px 100px;
+    background-color: white;
+    color: #445578;
+    margin-right: 23px;
+}
+
+.registerForm h1 {
+    font-weight: bold;
+    font-size: 33px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.registerForm Input {
+    border: 1px solid #d3e1ea;
+    border-radius: 3px;
+    height: 40px;
+    background-color: white;
+}
+
+.registerForm .inputTop {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 25px;
+    color: #445578;
+}
+
+.registerForm .inputBot {
+    font-size: 15px;
+}
+
+.workStatus {
+    display: flex;
+    gap: 10px;
+}
+
+.workStatus>div {
+    display: flex;
+    line-height: 19px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 7px;
+    border-radius: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #d3e1ea;
+    color: #8292b4;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.workStatus>div h3 {
+    font-weight: bold;
+    color: #457eff;
+    font-size: 16px;
+}
+
+.workStatus img {
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.getUpdateBox {
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.smallFont {
+    font-size: 13px;
+}
+
+.smallFontColor {
+    color: #457eff;
+}
+
+.registerForm button {
+    font-weight: bold;
+    font-size: 19px;
+    padding: 7px 20px;
+    border-radius: 25px;
+    color: white;
+    background-color: #457eff;
+    margin: 7px 0px 70px 0px;
+}
+
+.formSideBox {
+    border-left: 1px solid #d3e1ea;
+    width: 15%;
+    padding: 40px 0px 100px 20px;
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    display: inline-block;
+    margin-right: 40px;
+    background-color: white;
+}
+
+.formSideBox p {
+    position: relative;
+    top: 50px;
+    right: 37px;
+    border: 1px solid #d3e1ea;
+    display: inline-block;
+    padding: 5px;
+    color: rgb(81, 81, 81);
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 50%;
+}
+
+.formSideBox h3 {
+    font-weight: bold;
+    margin-left: 18px;
+    margin-bottom: 5px;
+}
+
+.formSideBox button {
+    margin: 0px;
+    background-color: white;
+    color: #457eff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #457eff;
 }

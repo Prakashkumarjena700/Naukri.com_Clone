@@ -6,6 +6,7 @@
     width: 100%;
     position: fixed;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    z-index:3;
 }
 
 .mainMenuItem {
@@ -87,6 +88,7 @@
     column-gap: 20px;
     padding: 20px;
     border-radius: 10px;
+    background-color: white;
 }
 
 #border {
@@ -105,6 +107,7 @@
     column-gap: 20px;
     padding: 20px 0px 20px 20px;
     border-radius: 10px;
+    background-color: white;
 }
 
 #serviesSubmenue {
@@ -117,6 +120,7 @@
     column-gap: 10px;
     padding: 20px;
     border-radius: 10px;
+    background-color: white;
 }
 
 #foremployersSubmenue {
@@ -126,6 +130,7 @@
     line-height: 30px;
     padding: 20px;
     border-radius: 10px;
+    background-color: white;
 }
 
 .loginBox {
@@ -172,6 +177,10 @@ label {
     padding: 0px 5px;
 }
 
+.not:hover {
+    color: #457eff;
+}
+
 .loginBox .devider {
     position: relative;
     height: 1px;
@@ -188,7 +197,8 @@ label {
     margin: 20px 0px;
     margin-top: 40px;
 }
-.signinWithGoogleBtn{
+
+.signinWithGoogleBtn {
     display: flex;
     align-items: center;
     justify-content: space-between;
