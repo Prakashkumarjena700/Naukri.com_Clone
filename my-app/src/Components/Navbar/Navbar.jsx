@@ -27,7 +27,12 @@ export default function Navbar() {
     const [password, setPassword] = useState(' ')
 
     const login = () => {
-        { name === ' ' || password === ' ' ? alert('Please Enter name and password') : alert('Login Sucessfull') }
+        if(name===' ' || password===' '){
+            alert('Please Enter Name and Password')
+        }else{
+            alert('Welcome')
+        }
+        
     }
 
     return (
@@ -111,6 +116,7 @@ export default function Navbar() {
                             </DrawerBody>
                         </DrawerContent>
                     </Drawer>
+                    
                     <button><Link to='/register' >Register</Link></button>
                 </div>
                 <div className='forEmployer'
