@@ -65,22 +65,26 @@
     text-align: center;
     margin-bottom: 20px;
 }
-.homePage3Btn Button{
+
+.homePage3Btn Button {
     background-color: white;
     margin: 0px 3px;
     font-size: 14px;
 }
-.homePage3Btn Button:hover{
+
+.homePage3Btn Button:hover {
     background-color: white;
 }
-.firstFlexDiv{
+
+.firstFlexDiv {
     width: 85%;
     margin: auto;
     display: flex;
     justify-content: center;
     gap: 10px;
 }
-.firstFlexDiv div{
+
+.firstFlexDiv div {
     border: 1px solid #eaf1f5;
     display: flex;
     align-items: center;
@@ -92,16 +96,56 @@
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: white;
-    box-shadow: 0px 6px 10px 0px rgba(234,241,245,1);
+    box-shadow: 0px 6px 10px 0px rgba(234, 241, 245, 1);
     margin-top: 20px;
 }
-.firstFlexDiv div:hover{
+
+.firstFlexDiv div:hover {
     box-shadow: 0px 10px 40px -17px #8292b4;
 }
-.firstFlexDiv>div>p:first-child{
+
+.firstFlexDiv>div>p:first-child {
     padding: 3px;
     border-radius: 50%;
 }
-.threeCard{
+
+.homePageHeading {
+    font-weight: bold;
+    font-size: 35px;
+    color: black;
+    margin-top: 55px;
+    text-align: center;
+
+}
+
+.halfSliderContainer {
+    height: 350px;
+    margin: auto;
+    width: 85%;
+    padding: 50px 100px;
+    border-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 100px;
+    background-color: #fef9f4;
+}
+
+.halfSliderContainer h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.halfSliderContainer p {
+    color: #8292b4;
+}
+
+.halfSliderContainer img {
+    height: 100px;
+}
+/* .Sponsored{
+    border: 1px solid green;
+} */
+
+.threeCard {
     border: 1px solid red;
 }

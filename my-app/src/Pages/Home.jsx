@@ -4,7 +4,7 @@ import { Input, InputGroup, Button, Select, InputLeftElement } from '@chakra-ui/
 import { SearchIcon, RepeatClockIcon, ChevronRightIcon } from '@chakra-ui/icons'
 import './Home.css'
 import { firstFlexData, secondFlexData } from '../Components/HomeCopmData'
-import { TopcompanieshiringnowSlider } from '../Components/HomeSlider'
+import { TopcompanieshiringnowSlider, FeaturedcompanieSlider, HelfSlider } from '../Components/HomeSlider'
 
 
 export default function Home() {
@@ -69,7 +69,27 @@ export default function Home() {
           </div>)
         }
       </div>
+      <h1 className='homePageHeading' >Top companies hiring now</h1>
       <TopcompanieshiringnowSlider />
+      <h1 className='homePageHeading' >Featured companies actively hiring</h1>
+      <FeaturedcompanieSlider />
+      <button className='viewAllCompaniesBtn' >View all companies</button>
+      <div className='halfSliderContainer' >
+        <img src="https://static.naukimg.com/s/0/0/i/role-collection.png" alt="" />
+        <h2>Discover jobs across <br /> popular roles</h2>
+        <p>Select a role and we'll show <br /> you relevant jobs for it!</p>
+        <HelfSlider />
+      </div>
+      <h1 className='homePageHeading' >Sponsored companies</h1>
+      <div className='Sponsored' >
+        <p>All</p>
+        <p>IT Services</p>
+        <p>Technology</p>
+        <p>Manufacturing & Production</p>
+        <p>Healthcare & Life Sciences</p>
+        <p>BFSI</p>
+        <span>+5 more</span>
+      </div>
       {/* <div className='threeCard' >
         <div></div>
         <div></div>
