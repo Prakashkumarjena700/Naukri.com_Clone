@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import React from "react";
 import './HomeSlider.css'
 import { TopcompanieshiringnowData } from './HomeCopmData'
+import {ChevronRightIcon} from '@chakra-ui/icons'
 
 export const TopcompanieshiringnowSlider = () => {
     const settings = {
@@ -17,8 +18,15 @@ export const TopcompanieshiringnowSlider = () => {
             <Slider {...settings} >
                 {
                     TopcompanieshiringnowData.map((ele) => <div className='Card' >
-                        <div >{ele.name}</div>
-
+                        <p>{ele.name} <ChevronRightIcon/> </p>
+                        <p>{ele.active} are actively hiring</p>
+                        <div className="picContainer" >
+                            {
+                                ele.pics.map((ele) => <div  >
+                                    <img src={ele} alt="🗼" />
+                                </div>)
+                            }
+                        </div>
                     </div>)
                 }
             </Slider>
