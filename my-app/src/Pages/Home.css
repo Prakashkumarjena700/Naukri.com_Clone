@@ -142,9 +142,20 @@
 .halfSliderContainer img {
     height: 100px;
 }
-/* .Sponsored{
-    border: 1px solid green;
-} */
+
+.Sponsored {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.Sponsored p {
+    border: 1px solid #d3e1ea;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
 
 .threeCard {
     border: 1px solid red;

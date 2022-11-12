@@ -82,7 +82,7 @@ export default function Home() {
       </div>
       <h1 className='homePageHeading' >Sponsored companies</h1>
       <div className='Sponsored' >
-        <p>All</p>
+        <p style={{border:'1px solid #ffc2b2',backgroundColor:'#fff1ed'}} >All</p>
         <p>IT Services</p>
         <p>Technology</p>
         <p>Manufacturing & Production</p>
