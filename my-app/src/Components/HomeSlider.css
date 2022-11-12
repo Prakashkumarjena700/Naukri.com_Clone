@@ -158,7 +158,7 @@
 
 .halfSliderCard {
     padding: 50px;
-   
+
 }
 
 .halfSliderCard div {
@@ -166,7 +166,7 @@
     border: 1px solid #8292b447;
     display: inline-block;
     width: 45%;
-    margin:10px;
+    margin: 10px;
     padding: 15px 10px;
     border-radius: 15px;
     border-top-right-radius: 7px;
@@ -180,4 +180,106 @@
 .halfSliderCard p {
     color: #8292b4;
     font-size: 14px;
+}
+
+.sponsordSliderCard {
+    text-align: center;
+    padding: 10px;
+}
+
+.sponsordSliderCard img {
+    margin: 10px auto;
+}
+
+.sponsordSliderCard>div {
+    border: 1px solid #8292b447;
+    display: inline-block;
+    width: 19%;
+    margin: 5px;
+    border-radius: 15px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    background-color: white;
+}
+
+.sponsordSliderCard>div h1 {
+    font-weight: 600;
+}
+
+.sponsordSliderCard>div .btns {
+    border: 1px solid #8292b447;
+    font-size: 13px;
+    display: inline-block;
+    padding: 0px 5px;
+    margin: 0px 2px;
+    color: #8292b4;
+}
+
+.sponsordSliderCard>div span {
+    margin-bottom: 10px;
+}
+
+.sponsordSliderCard>div div {
+    color: #8292b4;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.sponsordSliderCard>div:hover {
+    box-shadow: 1px 37px 29px 10px rgba(238, 243, 247, 1);
+}
+
+#lastslider {
+    width: 75%;
+    position: relative;
+    left: 130px;
+    bottom: 270px;
+    height: 250px;
+    padding-top: 10px;
+}
+#lastslider button{
+    background-color: white;
+    color: white;
+}
+
+#lastslider .lastSliderCard {
+    border: 1px solid #8292b447;
+    padding: 10px;
+    border-radius: 15px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+#lastslider .lastSliderCard:hover{
+    box-shadow: 1px 37px 29px 10px rgba(238, 243, 247, 1);
+}
+
+#lastslider p {
+    color: #8d9cbb;
+    font-size: 14px;
+    height: 100px;
+}
+
+#lastslider span {
+    color: #4c5c7e;
+}
+
+#lastslider h1 {
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+#lastslider .lastSliderCard button {
+    border-radius: 0px;
+    box-shadow: none;
+    border: 1px solid #8292b447;
+    width: 100px;
+    padding: 0px;
+    height: 22px;
+    margin-right: 10px;
+    color: #8d9cbb;
+    margin-top: 20px;
 }
