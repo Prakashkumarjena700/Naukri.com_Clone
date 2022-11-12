@@ -79,47 +79,57 @@ export const HalfSliderData = [
 
 ]
 
-export const Sponsored=[
+export const Sponsored = [
     {
-        arr:[
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/275530.gif',name:'Torrent Pharmace..',rating:'4.0',reviews:'1.8K+'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/4614709.gif',name:'Newagesys Soluti..',rating:'4.3',reviews:'26'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/1402790.gif',name:'CGI',rating:'4.2',reviews:'2K+'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/4825135.gif',name:'Triveni Almirah',rating:'3.3',reviews:'47'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/4388326.gif',name:'Vertafore >',rating:'4.1',reviews:'68',},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/654452.gif',name:'Johnson & Johnson',rating:'4.2',reviews:'1.1K+'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/6640601.gif',name:'Marnnet',rating:'3.1',reviews:'23'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/218544.gif',name:'IEngerizer',rating:'4.1',reviews:'3.7K+'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/3584.gif',name:'ICICI Prudential Life',rating:'4.1',reviews:'4.5K+'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/4634471.gif',name:'Terrabit Consulting',rating:'4.0',reviews:'15'},
+        arr: [
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/275530.gif', name: 'Torrent Pharmace..', rating: '4.0', reviews: '1.8K+' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/4614709.gif', name: 'Newagesys Soluti..', rating: '4.3', reviews: '26' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/1402790.gif', name: 'CGI', rating: '4.2', reviews: '2K+' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/4825135.gif', name: 'Triveni Almirah', rating: '3.3', reviews: '47' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/4388326.gif', name: 'Vertafore >', rating: '4.1', reviews: '68', },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/654452.gif', name: 'Johnson & Johnson', rating: '4.2', reviews: '1.1K+' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/6640601.gif', name: 'Marnnet', rating: '3.1', reviews: '23' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/218544.gif', name: 'IEngerizer', rating: '4.1', reviews: '3.7K+' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/3584.gif', name: 'ICICI Prudential Life', rating: '4.1', reviews: '4.5K+' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/4634471.gif', name: 'Terrabit Consulting', rating: '4.0', reviews: '15' },
         ]
     },
     {
-        arr:[
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/4388326.gif',name:'Vertafore ',rating:'4.1',reviews:'68',},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/748544.gif',name:'Indus Valley Partn..',rating:'3.6',reviews:'109'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/4642521.gif',name:'IOPEX',rating:'4.1',reviews:'951'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/4595261.gif',name:'FactSet',rating:'4.0',reviews:'954'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/1711838.gif',name:'GEP',rating:'3.9',reviews:'488'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/4634471.gif',name:'Terrabit Consulting',rating:'4.0',reviews:'15'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/214368.gif',name:'Bechtel',rating:'4.1',reviews:'554'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/383748.gif',name:'DTCC',rating:'4.4',reviews:'29'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/240022.gif',name:'Atria Convergence..',rating:'4.1',reviews:'1.5K+'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/1350708.gif',name:'Akamai',rating:'4.6',reviews:'192'},
+        arr: [
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/4388326.gif', name: 'Vertafore ', rating: '4.1', reviews: '68', },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/748544.gif', name: 'Indus Valley Partn..', rating: '3.6', reviews: '109' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/4642521.gif', name: 'IOPEX', rating: '4.1', reviews: '951' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/4595261.gif', name: 'FactSet', rating: '4.0', reviews: '954' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/1711838.gif', name: 'GEP', rating: '3.9', reviews: '488' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/4634471.gif', name: 'Terrabit Consulting', rating: '4.0', reviews: '15' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/214368.gif', name: 'Bechtel', rating: '4.1', reviews: '554' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/383748.gif', name: 'DTCC', rating: '4.4', reviews: '29' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/240022.gif', name: 'Atria Convergence..', rating: '4.1', reviews: '1.5K+' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/1350708.gif', name: 'Akamai', rating: '4.6', reviews: '192' },
         ]
     },
     {
-        arr:[
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/4595261.gif',name:'FactSet',rating:'4.0',reviews:'954'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/1711838.gif',name:'GEP',rating:'3.9',reviews:'488'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/190956.gif',name:'Atyeti',rating:'3.8',reviews:'37'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/2187308.gif',name:'AGS Health',rating:'4.1',reviews:'1.4K+'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/4658599.gif',name:'PubMatic',rating:'4.3',reviews:'60'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/240022.gif',name:'Atria Convergence..',rating:'4.1',reviews:'1.5K+'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/1350708.gif',name:'Akamai',rating:'4.6',reviews:'192'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/2062830.gif',name:'Zen3 Infosolutions',rating:'3.9',reviews:'187'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/4620917.gif',name:'Quantium Analytics',rating:'3.6',reviews:'10'},
-            {pic:'https://img.naukimg.com/logo_images/groups/v1/6640601.gif',name:'Marnnet',rating:'3.1',reviews:'23'},
+        arr: [
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/4595261.gif', name: 'FactSet', rating: '4.0', reviews: '954' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/1711838.gif', name: 'GEP', rating: '3.9', reviews: '488' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/190956.gif', name: 'Atyeti', rating: '3.8', reviews: '37' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/2187308.gif', name: 'AGS Health', rating: '4.1', reviews: '1.4K+' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/4658599.gif', name: 'PubMatic', rating: '4.3', reviews: '60' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/240022.gif', name: 'Atria Convergence..', rating: '4.1', reviews: '1.5K+' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/1350708.gif', name: 'Akamai', rating: '4.6', reviews: '192' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/2062830.gif', name: 'Zen3 Infosolutions', rating: '3.9', reviews: '187' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/4620917.gif', name: 'Quantium Analytics', rating: '3.6', reviews: '10' },
+            { pic: 'https://img.naukimg.com/logo_images/groups/v1/6640601.gif', name: 'Marnnet', rating: '3.1', reviews: '23' },
         ]
     },
+]
+
+export const HomelastSliderData = [
+    { sector: 'Data Science', name: 'Artificial Intelligence', dis: 'Learn in demand AI skills like Deep learning, NLP, Computer vision and more for career growth across different roles.', btn1: '600', btn2: '28' },
+    { sector: 'Cloud Technologies', name: 'AWS', dis: 'Get certified for high demand cloud computing skills for Cloud Practitioner, Architect, Developer, and Operations roles.', btn1: '800', btn2: '16' },
+    { sector: 'Programming', name: 'Data Structures & Algo..', dis: 'Master DS and Algorithms for entry level engineering roles in product companies and for competitive programming.', btn1: '800', btn2: '13' },
+    { sector: 'Management', name: 'Strategy and Leadership', dis: 'Learn to lead and thrive in a world of increasing uncertainty and volatility - get certified from top universities.', btn1: '500', btn2: '70' },
+    { sector: 'Management', name: 'Digital Marketing', dis: 'A fast growing field with opportunities in PPC, SEO, Email marketing, Marketing analytics, Content marketing and more.', btn1: '700', btn2: '25' },
+    { sector: 'Management', name: 'Business Analytics', dis: 'Improve your business decision making with dashboards, real-time analytics, scenario analysis, and reporting skills', btn1: '500', btn2: '42' }
+
 ]
