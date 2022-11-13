@@ -8,6 +8,7 @@ import { TopcompanieshiringnowSlider, FeaturedcompanieSlider, HelfSlider, Sponso
 import { BsPencil, BsLightningCharge } from 'react-icons/bs'
 import { AiFillFileText, AiOutlineRight } from 'react-icons/ai'
 import Footer from '../Components/Footer'
+import { Link } from 'react-router-dom'
 
 
 export default function Home() {
@@ -38,11 +39,10 @@ export default function Home() {
             <option value="">3 year</option>
             <option value="">4 year</option>
             <option value="">5 year</option>
-
             <option value="">12 year</option>
           </Select>
           <Input type='text' focusBorderColor='white' placeholder='Enter location'></Input>
-          <Button >Search</Button>
+          <Button ><Link to='/searchpage' >Search</Link></Button>
         </div>
       </div>
       <div className='homePage3Btn' >

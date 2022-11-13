@@ -133,3 +133,4 @@ export const HomelastSliderData = [
     { sector: 'Management', name: 'Business Analytics', dis: 'Improve your business decision making with dashboards, real-time analytics, scenario analysis, and reporting skills', btn1: '500', btn2: '42' }
 
 ]
+

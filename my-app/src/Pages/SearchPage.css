@@ -1,0 +1,125 @@
+.searchBtn {
+    display: inline-block;
+    position: absolute;
+    left: 613px;
+    top: 18px;
+    z-index: 7;
+    display: flex;
+    width: 205px;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    border-radius: 20px;
+    padding-left: 10px;
+    border: 1px solid #eaf1f5;
+    position: fixed;
+}
+
+.searchPage {
+    display: flex;
+}
+
+.searchPage>div:nth-child(1) {
+    width: 25%;
+    padding: 10px;
+    
+}
+
+.searchPage>div:nth-child(1) summary {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    margin-bottom: 7px;
+    color: #091e42;
+    font-weight: 600;
+}
+
+.searchPage>div:nth-child(1) details {
+    padding: 0px 10px;
+    color: #667a89;
+    font-size: 15px;
+    padding: 10px 0px;
+    border-top: 1px solid #eaf1f5;
+}
+
+.searchPage input[type='checkbox'] {
+    margin-right: 10px;
+}
+
+.searchPage>div:nth-child(2) {
+    width: 50%;
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+.searchPage>div:nth-child(3) {
+
+    width: 25%;
+    background-color: #fafafa;
+}
+
+.searchPage>div:nth-child(3)>div:nth-child(1) {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px;
+    background-color: white;
+}
+
+.searchPage>div:nth-child(3)>div:nth-child(1)>div img {
+    height: 50px;
+    width: 100px;
+}
+
+.searchPage>div:nth-child(3)>div:nth-child(1)>div {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    gap: 10px;
+    background-color: white;
+}
+
+#colb {
+    color: #5097e5;
+    font-weight: 600;
+}
+
+.resultContainer {
+    border: 1px solid #eaf1f5;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    background-color: white;
+}
+
+.resultContainer:hover {
+    box-shadow: 0px 0px 9px 3px rgba(235, 240, 246, 1);
+}
+
+.resultContainer img {
+    height: 60px;
+    position: absolute;
+    right: 28%;
+}
+
+.resultContainer h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #091e42;
+}
+
+.resultContainer p {
+    font-size: 13px;
+    color: #536777;
+    display: flex;
+    align-items: center;
+    line-height: 25px;
+
+}
+
+.resultContainer div {
+    display: flex;
+    gap: 10px;
+}
+.loading{
+margin-left: 30%;
+margin-top: 150px;
+}

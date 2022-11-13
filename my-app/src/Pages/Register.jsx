@@ -3,6 +3,7 @@ import './Register.css'
 import { CheckIcon } from '@chakra-ui/icons'
 import { Input } from '@chakra-ui/react'
 import { BsWhatsapp } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 
 export default function Register() {
     return (
@@ -57,7 +58,7 @@ export default function Register() {
                 <p className='inputBot' >Recruiters give first preference to candidates who have a resume</p>
                 <div className='getUpdateBox' ><input type='checkbox' ></input>&nbsp; Send me important updates on  &nbsp; <BsWhatsapp style={{ backgroundColor: '#48c857', color: 'white', borderRadius: '50%', display: 'inline-block' }} /> &nbsp; WhatsApp </div>
                 <p className='smallFont' >By clicking Register, you agree to the <span className='smallFontColor' >Terms and Conditions</span> & <span className='smallFontColor' >Privacy Policy</span> of Naukri.com</p>
-                <button>Register Now</button>
+                <button><Link to='/'>Register Now</Link> </button>
                 <div style={{ color: '#8292b4' ,textAlign:'right' }} className='smallFont' ><span className='smallFontColor' >About Us</span> | <span className='smallFontColor' >Contact Us</span> | <span className='smallFontColor' >FAQs</span> | <span className='smallFontColor' >Terms and Conditions</span> | <span className='smallFontColor' >Report a Problem</span> | <span className='smallFontColor' >Privacy Policy</span></div>
                 <p className='smallFont' style={{textAlign:'center'}} >All rights reserved &#169; 2022 Info Edge India Ltd.</p>
                 <div className='formSideBox' >

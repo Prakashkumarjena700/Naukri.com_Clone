@@ -26,6 +26,7 @@ export default function Navbar() {
     const [name, setName] = useState(' ')
     const [password, setPassword] = useState(' ')
 
+
     const login = () => {
         if(name===' ' || password===' '){
             alert('Please Enter Name and Password')
@@ -35,13 +36,14 @@ export default function Navbar() {
         
     }
 
+
     return (
 
 
         <div className='navbar' >
             <div >
                 <div>
-                    <img src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png" alt="" />
+                   <Link to='/' > <img src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png" alt="" /></Link>
                 </div>
                 <div className='nav-items' >
                     {
