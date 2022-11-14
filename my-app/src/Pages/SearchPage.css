@@ -22,7 +22,7 @@
 .searchPage>div:nth-child(1) {
     width: 25%;
     padding: 10px;
-    
+    position: fixed;
 }
 
 .searchPage>div:nth-child(1) summary {
@@ -50,10 +50,12 @@
     width: 50%;
     padding: 10px;
     background-color: #fafafa;
+    margin-left: 25%;
 }
 
 .searchPage>div:nth-child(3) {
-
+    position: fixed;
+    right: 0px;
     width: 25%;
     background-color: #fafafa;
 }

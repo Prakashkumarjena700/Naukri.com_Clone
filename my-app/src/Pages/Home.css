@@ -425,6 +425,9 @@
 
 .footerDiv {
     height: 400px;
+    background-color: white;
+    z-index: 2;
+    position: sticky;
 }
 
 .footerDiv>div:nth-child(1) {
