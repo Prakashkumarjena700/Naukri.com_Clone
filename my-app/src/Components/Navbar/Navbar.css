@@ -8,6 +8,12 @@
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
     z-index:3;
     background-color: white;
+    /* border: 1px solid red; */
+}
+.navbar2{
+    /* border: 1px solid blue; */
+    padding: 20px;
+    padding-bottom: 0px;
 }
 
 .mainMenuItem {
@@ -74,6 +80,7 @@
     font-weight: bold;
     color: black;
     font-size: 19px;
+    
 }
 
 
@@ -210,4 +217,23 @@ label {
     color: gray;
     margin-top: 30px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+@media screen and (max-width:967px){
+    .blocked{
+        font-size: 17px;
+    }
+    #companiesSubmenue{
+        left: 40px;
+    }
+    #serviesSubmenue{
+        left: 25px;
+    }
+    .firstFlexDiv{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:800px){
+    .navbar{
+        display: none;
+    }
 }

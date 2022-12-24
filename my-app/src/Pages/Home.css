@@ -1,6 +1,6 @@
-.speacer {
+/* .speacer {
     height: 70px;
-}
+} */
 
 .firstDiv {
     text-align: center;
@@ -77,11 +77,13 @@
 }
 
 .firstFlexDiv {
-    width: 85%;
     margin: auto;
     display: flex;
     justify-content: center;
+    /* border: 1px solid red; */
+    margin-bottom: 20px;
     gap: 10px;
+    font-size: 20px;
 }
 
 .firstFlexDiv div {
@@ -89,9 +91,8 @@
     display: flex;
     align-items: center;
     padding: 10px;
-    gap: 10px;
     font-weight: 600;
-    font-size: 20px;
+    /* font-size: 20px; */
     border-radius: 5px;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -113,7 +114,8 @@
     font-weight: bold;
     font-size: 35px;
     color: black;
-    margin-top: 55px;
+    margin-top: 58px;
+    margin-bottom: 9px;
     text-align: center;
 
 }
@@ -122,12 +124,13 @@
     height: 350px;
     margin: auto;
     width: 85%;
-    padding: 50px 100px;
+    padding: 50px 50px 50px 100px;
     border-radius: 20px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    margin-top: 100px;
+    margin-top: 35px;
     background-color: #fef9f4;
+    /* border: 1px solid red; */
 }
 
 .halfSliderContainer h2 {
@@ -144,11 +147,12 @@
 }
 
 .Sponsored {
+    width: 85%;
     display: flex;
     justify-content: center;
     gap: 10px;
     align-items: center;
-    margin: 10px 0px;
+    margin: auto;
 }
 
 .Sponsored p {
@@ -267,7 +271,6 @@
 
 .accelerateDiv {
     width: 90%;
-    height: 180px;
     margin: auto;
     border: 1px solid #d3e1ea;
     display: flex;
@@ -323,6 +326,7 @@
     display: flex;
     gap: 10px;
     margin-top: 20px;
+    font-size: small;
 }
 
 .accelerateDiv .btnDiv button {
@@ -340,6 +344,7 @@
     margin: 30px auto;
     height: 300px;
     padding: 30px;
+    padding-left: 0px;
 }
 
 .lastSliderContainer>h1 {
@@ -377,10 +382,12 @@
 }
 
 .scannerDiv>div:first-child {
-    padding: 50px 0px 0px 100px;
+    /* padding: 50px 0px 0px 100px; */
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding-top: 50px;
+    padding-left: 100px;
 }
 
 .scannerDiv>div:first-child>p {
@@ -442,10 +449,12 @@
     padding-left: 20px;
     padding-top: 50px;
 }
-.footerDiv>div:nth-child(1) div:nth-child(1) p{
+
+.footerDiv>div:nth-child(1) div:nth-child(1) p {
     margin-top: 30px;
 }
-.iconImgs{
+
+.iconImgs {
     display: flex;
     gap: 10px;
     margin-top: 10px;
@@ -455,12 +464,13 @@
     width: 40%;
     display: grid;
     padding: 50px 40px;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     font-size: 16px;
-    color:#445578;
+    color: #445578;
 }
-.footerDiv>div:nth-child(1) div:nth-child(2) p:hover{
-color: #457eff;
+
+.footerDiv>div:nth-child(1) div:nth-child(2) p:hover {
+    color: #457eff;
 }
 
 .footerDiv>div:nth-child(1)>div:nth-child(3) {
@@ -470,34 +480,38 @@ color: #457eff;
     align-items: center;
     padding: 40px;
 }
-.footerDiv>div:nth-child(1)>div:nth-child(3) h2{
- font-size: 20px;
+
+.footerDiv>div:nth-child(1)>div:nth-child(3) h2 {
+    font-size: 20px;
     font-weight: bold;
     color: black;
     margin-left: 10px;
 }
-.footerDiv>div:nth-child(1)>div:nth-child(3) p{
+
+.footerDiv>div:nth-child(1)>div:nth-child(3) p {
     margin: 0px;
     color: #445578;
     font-size: 13px;
     margin-left: 10px;
 }
-.footerDiv>div:nth-child(1) div:nth-child(3) #lastdiv{
+
+.footerDiv>div:nth-child(1) div:nth-child(3) #lastdiv {
     padding: 10px;
     border: 1px solid #d3e1ea;
     border-radius: 10px;
     width: 100%;
 }
-.footerDiv>div:nth-child(1) div:nth-child(3) #lastdiv img{
+
+.footerDiv>div:nth-child(1) div:nth-child(3) #lastdiv img {
     display: inline-block;
     margin-left: 10px;
 }
 
 
 .footerSlider>div {
-    width: 45%;
+    width: 100%;
     position: absolute;
-    bottom: 50px;
+    bottom: -40px;
     right: 10px;
 }
 
@@ -515,4 +529,278 @@ color: #457eff;
 .secondSecond img {
     height: 30px;
 
+}
+
+@media screen and (max-width:1180px) {
+    .accelerateDiv>div:nth-child(3) button {
+        font-size: 13px;
+    }
+
+    .inputBox p:last-child {
+        font-size: 10px;
+    }
+
+    .inputBox {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+
+    .Sponsored {
+        font-size: 10px;
+    }
+
+    .accelerateDiv .btnDiv {
+        font-size: x-small;
+    }
+
+    .accelerateDiv>div:nth-child(3) button {
+        font-size: 11px;
+    }
+
+    .scannerDiv h1 {
+        font-size: 22px;
+    }
+
+    .footerDiv>div:nth-child(1) div:nth-child(2) {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .firstFlexDiv {
+        font-size: 15px;
+    }
+
+    .halfSliderContainer {
+        padding-right: 70px;
+    }
+
+    .accelerateDiv>div:nth-child(3) button {
+        width: 60%;
+    }
+
+    .inputBox p {
+        font-size: 10px;
+    }
+
+    .scannerDiv>div:first-child {
+        padding-left: 40px;
+    }
+
+    .footerDiv>div:nth-child(1) div:nth-child(2) {
+        font-size: 12px;
+    }
+    .secondSecond {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .accelerateDiv .btnDiv {
+        font-size: 7px;
+        gap: 4px;
+    }
+
+    .accelerateDiv>div:nth-child(3) button {
+        width: 90%;
+    }
+
+    .lastSliderContainer>h1 {
+        font-size: 16px;
+    }
+
+    .footerDiv>div:nth-child(1) div:nth-child(2) {
+        padding: 50px 30px;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:706px) {
+    .Sponsored {
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .firstFlexDiv {
+        font-size: 12px;
+    }
+
+    .homePage3Btn Button {
+        font-size: 13px;
+        padding: 5px;
+    }
+
+    .accelerateDiv {
+        flex-direction: column;
+        /* border: 1px solid darkblue; */
+        padding: 0px 20px;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .accelerateDiv div:nth-child(1) {
+        width: 100%;
+    }
+
+    .accelerateDiv div:nth-child(2) {
+        width: 100%;
+    }
+
+    .accelerateDiv div:nth-child(3) {
+        width: 100%;
+    }
+
+    .accelerateDiv .btnDiv {
+        font-size: 10px;
+        gap: 4px;
+    }
+
+    .scannerDiv>div:first-child {
+        padding-left: 10px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .firstFlexDiv {
+        font-size: 10px;
+    }
+
+    .firstFlexDiv div {
+        padding: 5px;
+    }
+
+    .homePage3Btn Button {
+        font-size: 10px;
+
+    }
+
+    .halfSliderContainer {
+        padding-left: 50px;
+    }
+
+    .Sponsored {
+        font-size: 5px;
+        gap: 5px;
+    }
+
+    .scannerDiv {
+        /* border: 1px solid firebrick; */
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .scannerDiv>div {
+        width: 100%;
+    }
+
+    .scannerDiv>div:nth-child(1) {
+        padding: 35px;
+    }
+
+    .footerDiv>div:nth-child(1) div:nth-child(2) {
+        font-size: 8px;
+        padding: 50px 25px;
+    }
+    .secondSecond{
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .secondSecond{
+        font-size: 10px;
+    }
+    .firstFlexDiv {
+        font-size: 9px;
+        gap: 0px;
+    }
+
+    .searchDiv button {
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    .homePage3Btn Button {
+        font-size: 9px;
+    }
+
+    .Sponsored {
+        font-size: 4px;
+        gap: 2px;
+    }
+
+    .accelerateDiv .btnDiv {
+        font-size: 7.5px;
+        gap: 3px;
+    }
+
+    .lastSliderContainer>h1 {
+        font-size: 14px;
+    }
+
+    .footerDiv>div:nth-child(1) {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footerDiv>div:nth-child(1)>div:nth-child(1) {
+        width: 100%;
+        display: grid;
+        gap: 3%;
+    }
+    .footerDiv>div:nth-child(1) div:nth-child(2){
+        padding: 20px;
+    }
+    .footerDiv>div:nth-child(1) div:nth-child(3){
+        padding: 20px;
+    }
+
+    .footerDiv>div:nth-child(1) div:nth-child(2) {
+        width: 100%;
+    }
+
+    .footerDiv>div:nth-child(1) div:nth-child(3) {
+        width: 100%;
+    }
+    .footerSlider>div{
+        border: 1px solid rebeccapurple;
+        bottom: -200px;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .secondSecond{
+        font-size: 7px;
+    }
+    .firstFlexDiv {
+        font-size: 6px;
+        margin-bottom: 10px;
+    }
+
+    .homePage3Btn Button {
+        font-size: 6px;
+        padding: 3px;
+    }
+
+    .halfSliderContainer {
+        padding-left: 20px;
+    }
+
+    .halfSliderContainer p {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width:415px) {
+    .firstDiv h1 {
+        font-size: 25px;
+    }
 }

@@ -3,8 +3,8 @@ import Navbar from '../Components/Navbar/Navbar'
 import { Input, InputGroup, Button, Select, InputLeftElement } from '@chakra-ui/react'
 import { SearchIcon, RepeatClockIcon, ChevronRightIcon } from '@chakra-ui/icons'
 import './Home.css'
-import { firstFlexData, secondFlexData } from '../Components/HomeCopmData'
-import { TopcompanieshiringnowSlider, FeaturedcompanieSlider, HelfSlider, SponsoredSlider, HomelastSliderSlider } from '../Components/HomeSlider'
+import { firstFlexData, MyArr, secondFlexData } from '../Components/HomeCopmData'
+import { TopcompanieshiringnowSlider, FeaturedcompanieSlider, HelfSlider, SponsoredSlider, HomelastSliderSlider, Topcompanieshiring, Featuredcompanie, Sponsoredupdatedslider } from '../Components/HomeSlider'
 import { BsPencil, BsLightningCharge } from 'react-icons/bs'
 import { AiFillFileText, AiOutlineRight } from 'react-icons/ai'
 import Footer from '../Components/Footer'
@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <h1 className='speacer' >-</h1>
+      {/* <h1 className='speacer' >-</h1> */}
       <div className='firstDiv' >
         <h1>Find your dream job now</h1>
         <p>5 lakh+ jobs for you to explore</p>
@@ -73,9 +73,11 @@ export default function Home() {
         }
       </div>
       <h1 className='homePageHeading' >Top companies hiring now</h1>
-      <TopcompanieshiringnowSlider />
+      {/* <TopcompanieshiringnowSlider /> */}
+      <Topcompanieshiring/>
       <h1 className='homePageHeading' >Featured companies actively hiring</h1>
-      <FeaturedcompanieSlider />
+      {/* <FeaturedcompanieSlider /> */}
+      <Featuredcompanie/>
       <button className='viewAllCompaniesBtn' >View all companies</button>
       <div className='halfSliderContainer' >
         <img src="https://static.naukimg.com/s/0/0/i/role-collection.png" alt="" />
@@ -93,7 +95,8 @@ export default function Home() {
         <p>BFSI</p>
         <span>+5 more</span>
       </div>
-      <SponsoredSlider />
+      {/* <SponsoredSlider /> */}
+      <Sponsoredupdatedslider/>
       <button className='viewAllCompaniesBtn' >View all companies</button>
       <div className='threeCard' >
         <div>
