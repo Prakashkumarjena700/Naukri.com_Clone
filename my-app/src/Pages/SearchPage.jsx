@@ -4,12 +4,17 @@ import './SearchPage.css'
 import { SearchIcon, ChevronDownIcon, StarIcon, RepeatClockIcon } from '@chakra-ui/icons'
 import { Drawer, DrawerBody, DrawerHeader, Box, Slider, SliderMark, DrawerOverlay, SliderTrack, SliderFilledTrack, SliderThumb, DrawerContent, useDisclosure, Button, Input, InputGroup, InputLeftElement, Select } from '@chakra-ui/react'
 import axios from 'axios'
+import SearchPageSlider from '../Components/SearchPageSlider'
 import { MdFilterList } from "react-icons/md";
 import { BiShoppingBag, BiRupee } from "react-icons/bi";
-import { GrLocation } from "react-icons/gr";
-import { AiOutlineFileAdd, AiOutlineStar } from "react-icons/ai";
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { AiFillFileText, AiFillStar } from "react-icons/ai";
 import { BsDot } from "react-icons/bs";
 import Footer from '../Components/Footer'
+import { BsBag, BsBookmark } from "react-icons/bs";
+import { SkeletonText, SkeletonCircle } from '@chakra-ui/react'
+import Pagination from '../Components/Pagination'
+import { Link } from 'react-router-dom'
 
 
 const getData = (url) => {
@@ -27,21 +32,25 @@ export default function SearchPage() {
     const btnRef = React.useRef()
     const [text, setText] = useState('')
     const [arr, setArr] = useState([])
-    // const[loading, setLoading]=false
+    const [loading, setLoading] = useState(false)
+    const [page, setpage] = useState(1)
 
     const searchFunc = () => {
         console.log(text)
     }
 
     useEffect(() => {
-        getData(`https://mr-mishra.herokuapp.com/jobDataNaukri/?q=${text}`)
+        setLoading(true)
+        getData(`https://prakash-vercel-database.vercel.app/naukridata/?q=${text}&_page=${page}&_limit=5`)
             .then((res) => setArr(res.data))
-    }, [text])
+            .then(() => setLoading(false))
+    }, [text, page])
+
+    console.log(page)
 
     return (
         <div>
             <Navbar />
-            <h1 className='speacer' >-</h1>
             <div className='searchBtn' onClick={onOpen}  >
                 <div onClick={onOpen} >Search</div>
                 <SearchIcon bg='#457eff' h='7' style={{ borderRadius: '15px' }} w='7' p='1' color='white' ref={btnRef} />
@@ -87,159 +96,112 @@ export default function SearchPage() {
                     </DrawerContent>
                 </Drawer>
             </div>
-            <div className='searchPage' >
-                <div>
-                    <p style={{ display: 'flex', gap: '10px', fontWeight: '600', margin: '15px 0px' }} ><MdFilterList /> All filters </p>
-                    <details>
-                        <summary>Work mode <ChevronDownIcon /> </summary>
-                        <p><input type="checkbox" />Work from office(101726) </p>
-                        <p><input type="checkbox" />Hybrid(3269) </p>
-                        <p><input type="checkbox" />Permanent Remote / WFH(2128) </p>
-                        <p><input type="checkbox" />Temp. WFH due to covid(1777)</p>
-                    </details>
-                    <details>
-                        <summary>Experience <ChevronDownIcon /> </summary>
-                        <Box pt={6} pb={2}>
-                            <Slider aria-label='slider-ex-6' onChange={(val) => setSliderValue(val)}>
-                                <SliderMark value={0} {...labelStyles}>
-                                    0 Yrs
-                                </SliderMark>
-                                <SliderMark value={100} {...labelStyles}>
-                                    Any
-                                </SliderMark>
-                                <SliderMark
-                                    value={sliderValue}
-                                    textAlign='center'
-                                    bg='blue.500'
-                                    color='white'
-                                    mt='-10'
-                                    ml='-5'
-                                    w='12'
-                                >
-                                    {sliderValue}
-                                </SliderMark>
-                                <SliderTrack>
-                                    <SliderFilledTrack />
-                                </SliderTrack>
-                                <SliderThumb />
-                            </Slider>
-                        </Box>
-                    </details>
-                    <details>
-                        <summary>Department <ChevronDownIcon /> </summary>
-                        <p><input type="checkbox" />Engineering - Software & QA(99452) </p>
-                        <p><input type="checkbox" />UX, Design & Architecture(2430) </p>
-                        <p><input type="checkbox" />IT & Information Security(1957)</p>
-                        <p><input type="checkbox" />Other(1159)</p>
-                        <p id='colb' >+30 More </p>
-                    </details>
-                    <details>
-                        <summary>Location <ChevronDownIcon /> </summary>
-                        <p><input type="checkbox" /> Bangalore/Bengaluru(31066) </p>
-                        <p><input type="checkbox" /> Delhi / NCR(17780)</p>
-                        <p><input type="checkbox" /> Hyderabad/Secunderabad(14153)</p>
-                        <p><input type="checkbox" />Pune(13550) </p>
-                        <p id='colb' >+22 More </p>
-                    </details>
-                    <details>
-                        <summary>Salary <ChevronDownIcon /> </summary>
-                        <p><input type="checkbox" /> 0-3 Lakhs(13118) </p>
-                        <p><input type="checkbox" /> 3-6 Lakhs(56584) </p>
-                        <p><input type="checkbox" /> 6-10 Lakhs(76237) </p>
-                        <p><input type="checkbox" /> 10-15 Lakhs(44823) </p>
-                        <p id='colb' >+6 More </p>
-                    </details>
-                    <details>
-                        <summary>Company type <ChevronDownIcon /> </summary>
-                        <p><input type="checkbox" /> Foreign MNC(14038) </p>
-                        <p><input type="checkbox" /> Corporate(8296)</p>
-                        <p><input type="checkbox" /> Indian MNC(3982) </p>
-                        <p><input type="checkbox" /> Startup(1288) </p>
-                        <p id='colb' >+3 More </p>
-                    </details>
-                    <details>
-                        <summary>Role Category <ChevronDownIcon /> </summary>
-                        <p><input type="checkbox" /> Software Development(95021) </p>
-                        <p><input type="checkbox" />DevOps(2091) </p>
-                        <p><input type="checkbox" />Other Design(2011) </p>
-                        <p><input type="checkbox" /> Quality Assurance and Testing(1874) </p>
-                        <p id='colb' >+6 More</p>
-                    </details>
-                    <details>
-                        <summary>Education <ChevronDownIcon /> </summary>
-                        <p><input type="checkbox" /> Any Postgraduate(48765) </p>
-                        <p><input type="checkbox" />Post Graduation Not Required(24384) </p>
-                        <p><input type="checkbox" />Any Graduate(67330) </p>
-                        <p><input type="checkbox" /> B.Tech/B.E.(41194) </p>
-                        <p id='colb' > + 21 More </p>
-                    </details>
-                    <details>
-                        <summary>Posted by <ChevronDownIcon /> </summary>
-                        <p><input type="checkbox" /> Company Jobs(97085) </p>
-                        <p ><input type="checkbox" /> Consultant Jobs(11812) </p>
-                    </details>
-                    <details>
-                        <summary>Industries <ChevronDownIcon /> </summary>
-                        <p><input type="checkbox" />IT Services & Consulting(62777) </p>
-                        <p><input type="checkbox" />Recruitment / Staffing(13520) </p>
-                        <p><input type="checkbox" />Software Product(4470) </p>
-                        <p><input type="checkbox" />Management Consulting(3593) </p>
-                        <p id='colb' >+ 21 More </p>
-                    </details>
-                    <details>
-                        <summary>Top Companies <ChevronDownIcon /> </summary>
-                        <p><input type="checkbox" />Accenture(2274) </p>
-                        <p><input type="checkbox" />IBM India(665) </p>
-                        <p><input type="checkbox" />Infosys Technologies(392) </p>
-                        <p><input type="checkbox" /> CGI Group Inc (269)</p>
-                        <p id='colb' >+ 25 More </p>
-                    </details>
+            <SearchPageSlider />
+            <div className='searchMainContainer' >
+                <div className='allfilters'>
+                    <p>All Filters</p>
+                    <div>
+                        <p>Department</p>
+                        <label ><input type="checkbox" onChange={() => setText('it')} />IT & Information</label>
+                        <label ><input type="checkbox" onChange={() => setText('sale')} />Sales & Business</label>
+                        <label ><input type="checkbox" onChange={() => setText('banking')} />Banking</label>
+                    </div>
+                    <div>
+                        <p>Location</p>
+                        <label ><input type="checkbox" onChange={() => setText('Bangalore')} />Bangalore</label>
+                        <label ><input type="checkbox" onChange={() => setText('bhubaneswar')} />Bhubaneswar</label>
+                        <label ><input type="checkbox" onChange={() => setText('delhi')} />Delhi / NCR</label>
+                        <label ><input type="checkbox" onChange={() => setText('pune')} />Pune</label>
+                        <label ><input type="checkbox" onChange={() => setText('hyderabad')} />Hyderabad</label>
+                    </div>
+                    <div>
+                        <p>Role Category</p>
+                        <label ><input type="checkbox" onChange={() => setText('Software Development')} />Software Development</label>
+                        <label ><input type="checkbox" onChange={() => setText('sale')} />Retail & B2C Sales</label>
+                        <label ><input type="checkbox" onChange={() => setText('it')} />It Support</label>
+                    </div>
+                    <div>
+                        <p>Industries</p>
+                        <label ><input type="checkbox" onChange={() => setText('it services')} />IT Services</label>
+                        <label ><input type="checkbox" onChange={() => setText('banking')} />Banking</label>
+                        <label ><input type="checkbox" onChange={() => setText('bpo')} />BPO</label>
+                    </div>
+                    <div>
+                        <p>Top Companies</p>
+                        <label ><input type="checkbox" onChange={() => setText('Accenture')} />Accenture</label>
+                        <label ><input type="checkbox" onChange={() => setText('Infosys')} />Infosys Technologies</label>
+                        <label ><input type="checkbox" onChange={() => setText('IBM')} />IBM India</label>
+                        <label ><input type="checkbox" onChange={() => setText('tcs')} />TCS</label>
+                    </div>
+                </div>
+                <div className='allresult'>
+                    {loading ?
+                        <div>
+                            <SkeletonCircle size='10' />
+                            <SkeletonText mt='4' noOfLines={2} spacing='4' skeletonHeight='4' />
+                            <br />
+                            <SkeletonCircle size='10' />
+                            <SkeletonText mt='4' noOfLines={2} spacing='4' skeletonHeight='4' />
+                            <br />
+                            <SkeletonCircle size='10' />
+                            <SkeletonText mt='4' noOfLines={2} spacing='4' skeletonHeight='4' />
+                            <br />
+                            <SkeletonCircle size='10' />
+                            <SkeletonText mt='4' noOfLines={2} spacing='4' skeletonHeight='4' />
+                            <br />
+                            <SkeletonCircle size='10' />
+                            <SkeletonText mt='4' noOfLines={2} spacing='4' skeletonHeight='4' />
+                            <br />
+                            <SkeletonCircle size='10' />
+                            <SkeletonText mt='4' noOfLines={2} spacing='4' skeletonHeight='4' />
+                            <br />
+                        </div> :
+                        arr.map((ele) =>
+                            <div className='resultCard' >
+                                <Link to={`/searchpage/${ele.id}`} className='resultCard' style={{ margin: '0px', padding: '0px' }} >
+                                    <div>
+                                        <div>
+                                            <p>{ele.name}</p>
+                                            <p>{ele.comp} <AiFillStar color='#ffab00' /><span color='#9ea6bb'>{ele.rating}</span></p>
+                                        </div>
+                                        <div>
+                                            <img src={ele.logo} alt="" />
+                                        </div>
+                                    </div>
+                                    <p className='experiance' ><BsBag color='#9ea6bb' /> &nbsp; {ele.exp} Yrs &nbsp; | &nbsp;<BiRupee color='#9ea6bb' />&nbsp; Not disclosed | &nbsp;<HiOutlineLocationMarker color='#9ea6bb' />{ele.address.substring(0, 11)}</p>
+                                    <p className='discription' ><AiFillFileText color='#9ea6bb' /> {ele.dis}</p>
+                                    <div>
+                                        <p>Experience</p>
+                                        <p><BsDot /> Google Drive</p>
+                                        <p><BsDot /> Onsite Support</p>
+                                        <p><BsDot /> Networking</p>
+                                        <p><BsDot /> communication skills</p>
+                                    </div>
+                                    <div>
+                                        <p style={{ fontSize: '70%' }} >Few Days Ago</p>
+                                        <p style={{ color: 'black' }} ><BsBookmark /> Save</p>
+                                    </div>
+                                </Link>
+                            </div>
+                        )
+                    }
+                    <Pagination current={page} total={5} onchange={(value) => setpage(value)} />
 
                 </div>
-                <div >
-                    {
-                        arr.map((ele) =>
-                            <div className='resultContainer' >
-                                <img src={ele.img} alt="" />
-                                <h2>{ele.name}</h2>
-                                <p style={{ fontSize: '15px' }} >{ele.comp} {ele.rating} &nbsp;<StarIcon color='gold' h='3' />&nbsp;<span style={{ color: '#5097e5' }} >({ele.reviews} Reviews)</span></p>
-                                <div>
-                                    <p> <BiShoppingBag /> {ele.exp}</p>
-                                    <p> <BiRupee /> Not disclosed</p>
-                                    <p> <GrLocation /> {ele.location}</p>
-                                </div>
-                                <p><AiOutlineFileAdd /> {ele.dis}</p>
-                                <div style={{ margin: '10px 0px' }} >
-                                    {
-                                        ele.arr.map((item) => <p> <BsDot /> {item}</p>)
-                                    }
-                                </div>
-                                <div style={{ justifyContent: 'space-between' }} >
-                                    <p style={{ fontSize: '11px', backgroundColor: '#eaf1f5' }} > <RepeatClockIcon />&nbsp; 3 DAYS AGO</p>
-                                    <p><AiOutlineStar /> Save</p>
-                                </div>
-                            </div>)
-                    }
-                </div>
-                <div>
+                <div className='ad'>
+                    <p>See 13 jobs in Featured Companies</p>
                     <div>
-                        <h1>See 143 jobs in Featured <br /> Companies</h1>
-                        <div>
-                            <img src="https://img.naukimg.com/fc_images/v2/12386.gif" alt="" />
-                            <img src="https://img.naukimg.com/fc_images/v2/4113192.gif" alt="" />
-                            <img src="https://img.naukimg.com/fc_images/v2/196760.gif" alt="" />
-                            <img src="https://img.naukimg.com/fc_images/v2/13512.gif" alt="" />
-                            <img src="https://img.naukimg.com/fc_images/v2/5111614.gif" alt="" />
-                            <img src="https://img.naukimg.com/fc_images/v2/3211.gif" alt="" />
-                            <img src="https://img.naukimg.com/fc_images/v2/3122282.gif" alt="" />
-                            <img src="https://img.naukimg.com/fc_images/v2/5271592.gif" alt="" />
-                            <img src="https://img.naukimg.com/fc_images/v2/3426010.gif" alt="" />
-                            <img src="https://img.naukimg.com/fc_images/v2/45244.gif" alt="" />
-                        </div>
+                        <img src="https://img.naukimg.com/fc_images/v2/275401.gif" alt="" />
+                        <img src="https://img.naukimg.com/fc_images/v2/7053.gif" alt="" />
+                        <img src="https://img.naukimg.com/fc_images/v2/93084.gif" alt="" />
+                        <img src="https://img.naukimg.com/fc_images/v2/719011.gif" alt="" />
+                        <img src="https://img.naukimg.com/fc_images/v2/45244.gif" alt="" />
+                        <img src="https://img.naukimg.com/fc_images/v2/30210.gif" alt="" />
+                        <img src="https://img.naukimg.com/fc_images/v2/759389.gif" alt="" />
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }

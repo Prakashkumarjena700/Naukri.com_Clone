@@ -64,62 +64,6 @@ export const Topcompanieshiring = () => {
     )
 }
 
-// export const TopcompanieshiringnowSlider = () => {
-//     var settings = {
-//         dots: true,
-//         infinite: false,
-//         speed: 500,
-//         slidesToShow: 4,
-//         slidesToScroll: 4,
-//         initialSlide: 0,
-//         responsive: [
-//             {
-//                 breakpoint: 1024,
-//                 settings: {
-//                     slidesToShow: 3,
-//                     slidesToScroll: 3,
-//                     infinite: true,
-//                     dots: true
-//                 }
-//             },
-//             {
-//                 breakpoint: 600,
-//                 settings: {
-//                     slidesToShow: 2,
-//                     slidesToScroll: 2,
-//                     initialSlide: 2
-//                 }
-//             },
-//             {
-//                 breakpoint: 480,
-//                 settings: {
-//                     slidesToShow: 1,
-//                     slidesToScroll: 1
-//                 }
-//             }
-//         ]
-//     }
-//     return (
-//         <div id="TopcompanieshiringnowSliderContainer" className='TopcompanieshiringnowSliderContainer' >
-//             <Slider {...settings} >
-//                 {
-//                     TopcompanieshiringnowData.map((ele) => <div className='Card' >
-//                         <p>{ele.name} <ChevronRightIcon /> </p>
-//                         <p>{ele.active} are actively hiring</p>
-//                         <div className="picContainer" >
-//                             {
-//                                 ele.pics.map((ele) => <div  >
-//                                     <img src={ele} alt="🗼" />
-//                                 </div>)
-//                             }
-//                         </div>
-//                     </div>)
-//                 }
-//             </Slider>
-//         </div>
-//     )
-// }
-
 export const Featuredcompanie = () => {
     var settings = {
         dots: false,
@@ -172,31 +116,6 @@ export const Featuredcompanie = () => {
     )
 }
 
-// export const FeaturedcompanieSlider = () => {
-//     const settings = {
-//         infinite: true,
-//         speed: 500,
-//         slidesToShow: 5,
-//         slidesToScroll: 3
-
-//     };
-//     return (
-//         <div className='TopcompanieshiringnowSliderContainer' >
-//             <Slider {...settings} >
-//                 {
-//                     FeaturedcompaniesactivelyhiringData.map((ele) => <div className="FeaturedcompanieSliderCard" >
-//                         <img src={ele.pic} alt={ele.name} />
-//                         <div><h2>{ele.name}</h2>
-//                             <div><StarIcon h='3' w='3' color='gold' /><span>  {ele.rating}</span><span>| {ele.reviews} reviews</span></div>
-//                         </div>
-//                         <p>{ele.dis}</p>
-//                         <button>View jobs</button>
-//                     </div>)
-//                 }
-//             </Slider>
-//         </div>
-//     )
-// }
 export const HelfSlider = () => {
     const settings = {
         infinite: true,
@@ -224,38 +143,6 @@ export const HelfSlider = () => {
         </div>
     )
 }
-// export const SponsoredSlider = () => {
-//     const settings = {
-//         infinite: true,
-//         speed: 500,
-//         slidesToShow: 1,
-//         slidesToScroll: 1
-//     };
-//     return (
-//         <div id="sponsoredslider" className='TopcompanieshiringnowSliderContainer' >
-//             <Slider {...settings} >
-//                 {
-//                     Sponsored.map((ele) => <div className="sponsordSliderCard" >
-//                         {
-//                             ele.arr.map((ele) =>
-//                                 <div>
-//                                     <img src={ele.pic} alt={ele.name} />
-//                                     <h1>{ele.name}<ChevronRightIcon color='#a5b2ca' /></h1>
-//                                     <div><StarIcon h='3' w='3' color='gold' /> <p>{ele.rating}</p><p>| {ele.reviews} reviews</p> </div>
-//                                     <p className="btns" >Software Product</p>
-//                                     <br />
-//                                     <span className="btns" >Foreign MNC</span><span className="btns" >Product</span>
-//                                     <p style={{ color: 'white' }} >-</p>
-//                                 </div>
-//                             )
-//                         }
-//                     </div>
-//                     )
-//                 }
-//             </Slider>
-//         </div>
-//     )
-// }
 
 export const Sponsoredupdatedslider = () => {
     var settings = {

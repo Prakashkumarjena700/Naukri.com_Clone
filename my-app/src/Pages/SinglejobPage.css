@@ -1,0 +1,61 @@
+.SinglepagefirstDiv {
+    background-color: #d4e5ff;
+    border: 1px solid #d4e5ff;
+}
+
+.SinglepagefirstDiv>div {
+    margin: 10px 5px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.SinglepagefirstDiv>div>div:nth-child(1) {
+    /* border: 1px solid firebrick; */
+    text-align: left;
+    color: #333333;
+}
+
+.SinglepagefirstDiv>div>div:nth-child(1) p:first-child {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.SinglepagefirstDiv>div>div:nth-child(1) p:last-child {
+    font-size: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.SinglepagefirstDiv>div>div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    font-size: 90%;
+    font-weight: 500;
+    color: #4a90e2;
+    gap: 10px;
+}
+
+.SinglepagefirstDiv>div>div:nth-child(2) button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 7px 30px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.jobSinglePageMainContainer {
+    border: 1px solid rebeccapurple;
+    display: flex;
+}
+
+.jobSinglePageMainContainer>div {
+    border: 1px solid red;
+}
+
+.jobSinglePageMainContainer>div :nth-child(1) {
+    width: 60%;
+}
