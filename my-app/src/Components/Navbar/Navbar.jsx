@@ -53,7 +53,7 @@ export default function Navbar() {
                                         <li
                                             onMouseEnter={() => setjobDropdown(true)}
                                             onMouseLeave={() => setjobDropdown(false)}
-                                        >   <p className='mainMenuItem' >{ele.title}</p>
+                                        >   <p className='mainMenuItem' ><Link to='/searchpage' >{ele.title}</Link></p>
                                             {jobdropDown && <JobDropDown />}
                                         </li>
                                     )

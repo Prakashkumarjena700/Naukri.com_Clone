@@ -48,14 +48,134 @@
 }
 
 .jobSinglePageMainContainer {
-    border: 1px solid rebeccapurple;
+    /* border: 1px solid rebeccapurple; */
     display: flex;
+    padding: 10px;
+    gap: 1%;
 }
 
-.jobSinglePageMainContainer>div {
-    border: 1px solid red;
+.jobSinglePageMainContainer>div:first-child {
+    background-color: white;
+    box-shadow: 0px 0px 12px -11px rgba(0, 0, 0, 0.75);
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.jobSinglePageMainContainer>div :nth-child(1) {
+.jobSinglePageMainContainer>div:nth-child(1) {
     width: 60%;
+}
+
+.jobSinglePageMainContainer span {
+    color: gray;
+}
+
+.jobSinglePageMainContainer h2 {
+    font-weight: 700;
+
+}
+
+.jobSinglePageMainContainer h3 {
+    margin-left: 3%;
+}
+
+.jobSinglePageSecondCtrnl {
+    /* border: 1px solid black; */
+    width: 40%;
+
+}
+
+.jobSinglePageSecondCtrnl .FirstContainer {
+    background-color: white;
+    box-shadow: 0px 0px 12px -11px rgba(0, 0, 0, 0.75);
+    position: sticky;
+    top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.jobSinglePageSecondCtrnl h2 {
+    font-size: 17px;
+}
+
+.jobSinglePageSecondCtrnl .FirstContainer>div p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: gray;
+}
+
+.jobSinglePageSecondCtrnl h4 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.jobSinglePageSecondCtrnl img {
+    width: 21%;
+}
+
+.jobSinglePageSecondCtrnl .FirstContainer>div {
+    /* border: 1px solid red; */
+    display: flex;
+    font-size: 13px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.SecondContainerSp {
+    background-color: white;
+    box-shadow: 0px 0px 12px -11px rgba(0, 0, 0, 0.75);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.SecondContainerSp>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.SecondContainerSp>div :nth-child(2) {
+    display: flex;
+    gap: 7px;
+    justify-content: flex-end;
+}
+
+.SecondContainerSp img {
+    height: 30px;
+}
+
+.SecondContainerSp p {
+    display: flex;
+    font-size: 13px;
+    color: gray;
+}
+
+@media screen and (max-width:500px) {
+    .SinglepagefirstDiv>div>div:nth-child(1) p:first-child {
+        font-size: 100%;
+    }
+
+    .SinglepagefirstDiv>div>div:nth-child(2) {
+        font-size: 70%;
+    }
+    .SinglepagefirstDiv>div>div:nth-child(2) button{
+        padding: 7px 17px;
+    }
+    .jobSinglePageMainContainer{
+        flex-direction: column;
+    }
+    .jobSinglePageMainContainer>div{
+        width: 100%;
+    }
+    .jobSinglePageMainContainer>div:nth-child(1){
+        width: 100%;
+    }
+    .jobSinglePageSecondCtrnl .FirstContainer {
+       margin-top: 10px;
+        
+    }
+    .jobSinglePageSecondCtrnl img{
+        width: 20%;
+    }
 }

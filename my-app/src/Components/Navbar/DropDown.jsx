@@ -1,5 +1,6 @@
 import React from 'react'
 import { Jobs, Companies, Services, Foremployers } from './NavbarItem'
+import { Link } from 'react-router-dom'
 
 
 export const JobDropDown = () => {
@@ -7,7 +8,7 @@ export const JobDropDown = () => {
     return (
         <div id='jobSubmenue' className={dropDown ? 'jobs-submenue clicked' : 'jobs-submenue'} onClick={() => setDropdown(!dropDown)} >
             {
-                Jobs.map((ele) => <p key={ele.id} id={ele.id === "j1" || ele.id <= 6 ? 'noborder' : 'border'} className={ele.id === 'j1' || ele.id === 'j2' || ele.id === 'j3' || ele.id === 'j4' ? 'blocked' : 'not'} >{ele.title}</p>)
+                Jobs.map((ele) => <p key={ele.id} id={ele.id === "j1" || ele.id <= 6 ? 'noborder' : 'border'} className={ele.id === 'j1' || ele.id === 'j2' || ele.id === 'j3' || ele.id === 'j4' ? 'blocked' : 'not'} ><Link to='searchpage' >{ele.title}</Link></p>)
             }
         </div>
     )

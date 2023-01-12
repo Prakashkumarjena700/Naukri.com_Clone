@@ -435,6 +435,7 @@
     background-color: white;
     z-index: 2;
     position: sticky;
+   
 }
 
 .footerDiv>div:nth-child(1) {
@@ -509,10 +510,11 @@
 
 
 .footerSlider>div {
-    width: 100%;
+    width: 45%;
     position: absolute;
-    bottom: -40px;
+    bottom: 37px;
     right: 10px;
+    /* border: 1px solid blue; */
 }
 
 .secondSecond {
@@ -530,28 +532,27 @@
     height: 30px;
 
 }
-
 @media screen and (max-width:1180px) {
     .accelerateDiv>div:nth-child(3) button {
         font-size: 13px;
     }
-
+    
     .inputBox p:last-child {
         font-size: 10px;
     }
-
+    
     .inputBox {
         width: 90%;
     }
-
+    
 }
 
 @media screen and (max-width:1000px) {
-
+    
     .Sponsored {
         font-size: 10px;
     }
-
+    
     .accelerateDiv .btnDiv {
         font-size: x-small;
     }
@@ -568,7 +569,6 @@
         font-size: 13px;
     }
 }
-
 @media screen and (max-width:900px) {
     .firstFlexDiv {
         font-size: 15px;
@@ -594,7 +594,11 @@
         font-size: 12px;
     }
     .secondSecond {
+        width: 97%;
+    }
+    .footerSlider>div{
         width: 100%;
+        bottom: -44px;
     }
 }
 
@@ -769,7 +773,7 @@
         width: 100%;
     }
     .footerSlider>div{
-        border: 1px solid rebeccapurple;
+        /* border: 1px solid rebeccapurple; */
         bottom: -200px;
     }
 

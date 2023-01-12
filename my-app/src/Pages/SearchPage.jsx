@@ -46,8 +46,6 @@ export default function SearchPage() {
             .then(() => setLoading(false))
     }, [text, page])
 
-    console.log(page)
-
     return (
         <div>
             <Navbar />
