@@ -1,5 +1,5 @@
 # Naukri.com_Clone
-Naukri.com, India's No.1 job site that provides hiring-related services to corporate/recruiters, placement agencies &amp; to job-seekers in India &amp;
+
 <img src="https://cdn2.downdetector.com/static/uploads/logo/naukri-logo.png" alt="Naukri.com" />
 <br/>
 <h2>Tech Stacks</h2>
